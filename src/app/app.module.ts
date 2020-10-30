@@ -37,6 +37,10 @@ import { SchoolSearchComponent } from './members/school-search/school-search.com
 import { PeopleSearchComponent } from './members/people-search/people-search.component';
 import { PersonProfileComponent } from './members/person-profile/person-profile.component';
 import { MySchoolsComponent } from './members/my-schools/my-schools.component';
+import { HeaderComponent } from './static/header/header.component';
+import { FooterComponent } from './static/footer/footer.component';
+import { RightSidebarComponent } from './static/right-sidebar/right-sidebar.component';
+import { LeftSidebarComponent } from './static/left-sidebar/left-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +78,11 @@ import { MySchoolsComponent } from './members/my-schools/my-schools.component';
     SchoolSearchComponent,
     PeopleSearchComponent,
     PersonProfileComponent,
-    MySchoolsComponent
+    MySchoolsComponent,
+    HeaderComponent,
+    FooterComponent,
+    RightSidebarComponent,
+    LeftSidebarComponent
   ],
   imports: [
     BrowserModule,
