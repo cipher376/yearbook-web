@@ -41,6 +41,7 @@ import { HeaderComponent } from './static/header/header.component';
 import { FooterComponent } from './static/footer/footer.component';
 import { RightSidebarComponent } from './static/right-sidebar/right-sidebar.component';
 import { LeftSidebarComponent } from './static/left-sidebar/left-sidebar.component';
+import { ForgotPasswordComponent } from './public/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { LeftSidebarComponent } from './static/left-sidebar/left-sidebar.compone
     HeaderComponent,
     FooterComponent,
     RightSidebarComponent,
-    LeftSidebarComponent
+    LeftSidebarComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
