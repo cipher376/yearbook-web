@@ -1,3 +1,5 @@
+import { RegisterComponent } from './public/register/register.component';
+import { LoginComponent } from './public/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ChangePasswordComponent } from './public/change-password/change-password.component';
@@ -7,12 +9,20 @@ import { LoginComponent } from './public/login/login.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: 'home',
+    component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
   },
   {
     path: 'change-password',
@@ -22,15 +32,8 @@ const routes: Routes = [
     path: 'forgot-password',
     component: ForgotPasswordComponent
   },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  }, 
-  {
-    path: '**',
-    component: HomeComponent
-  }
+  { path: '',   redirectTo: '/login', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '**', component:  LoginComponent},  // Wildcard route for a 404 page
 ];
 
 @NgModule({
