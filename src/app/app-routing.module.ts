@@ -7,6 +7,7 @@ import { ForgotPasswordComponent } from './public/forgot-password/forgot-passwor
 import { HomeComponent } from './public/home/home.component';
 import { LoginComponent } from './public/login/login.component';
 import { SuggestionComponent } from './public/suggestion/suggestion.component';
+import { FaqComponent } from './public/faq/faq.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'suggestion',
     component: SuggestionComponent
+  },
+  {
+    path: 'faq',
+    component: FaqComponent
   },
   { path: '',   redirectTo: '/login', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component:  LoginComponent},  // Wildcard route for a 404 page

@@ -43,6 +43,7 @@ import { RightSidebarComponent } from './static/right-sidebar/right-sidebar.comp
 import { LeftSidebarComponent } from './static/left-sidebar/left-sidebar.component';
 import { ForgotPasswordComponent } from './public/forgot-password/forgot-password.component';
 import { SuggestionComponent } from './public/suggestion/suggestion.component';
+import { FaqComponent } from './public/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { SuggestionComponent } from './public/suggestion/suggestion.component';
     RightSidebarComponent,
     LeftSidebarComponent,
     ForgotPasswordComponent,
-    SuggestionComponent
+    SuggestionComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
