@@ -42,6 +42,7 @@ import { FooterComponent } from './static/footer/footer.component';
 import { RightSidebarComponent } from './static/right-sidebar/right-sidebar.component';
 import { LeftSidebarComponent } from './static/left-sidebar/left-sidebar.component';
 import { ForgotPasswordComponent } from './public/forgot-password/forgot-password.component';
+import { SuggestionComponent } from './public/suggestion/suggestion.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { ForgotPasswordComponent } from './public/forgot-password/forgot-passwor
     FooterComponent,
     RightSidebarComponent,
     LeftSidebarComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    SuggestionComponent
   ],
   imports: [
     BrowserModule,
