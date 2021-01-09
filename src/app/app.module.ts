@@ -1,3 +1,6 @@
+import { LocalStorageService, NgxWebstorageModule, SessionStorageService } from 'ngx-webstorage';
+import { MyStorage } from './shared/services/providers/my-storage.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -42,6 +45,8 @@ import { FooterComponent } from './static/footer/footer.component';
 import { RightSidebarComponent } from './static/right-sidebar/right-sidebar.component';
 import { LeftSidebarComponent } from './static/left-sidebar/left-sidebar.component';
 import { ForgotPasswordComponent } from './public/forgot-password/forgot-password.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { httpInterceptorProviders } from './shared/services/my-interceptors';
 
 @NgModule({
   declarations: [
@@ -88,9 +93,19 @@ import { ForgotPasswordComponent } from './public/forgot-password/forgot-passwor
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    NgxWebstorageModule.forRoot(),
+
   ],
-  providers: [],
+  providers: [
+    MyStorage,
+    httpInterceptorProviders,
+    // LocalStorageService,
+    // SessionStorageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

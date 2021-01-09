@@ -21,7 +21,10 @@
     "@angular/router": "~10.1.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "ngx-toastr": "^13.0.0",
+    "ngx-webstorage": "^6.0.0",
+    "ngx-socket-io": "^3.2.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.7",
