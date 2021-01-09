@@ -47,6 +47,8 @@ import { LeftSidebarComponent } from './static/left-sidebar/left-sidebar.compone
 import { ForgotPasswordComponent } from './public/forgot-password/forgot-password.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { httpInterceptorProviders } from './shared/services/my-interceptors';
+import { SuggestionComponent } from './public/suggestion/suggestion.component';
+import { FaqComponent } from './public/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +91,9 @@ import { httpInterceptorProviders } from './shared/services/my-interceptors';
     FooterComponent,
     RightSidebarComponent,
     LeftSidebarComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    SuggestionComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

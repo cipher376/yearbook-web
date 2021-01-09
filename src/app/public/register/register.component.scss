@@ -2,11 +2,12 @@
   background-color: rgba(255, 94, 58, 0.95);
 }
 
+
 .content-bg-wrap {
-  background-image: url("../../../assets/img/landing-users.png");
-  background-position: 0 0;
-  background-repeat: repeat;
-  -webkit-animation: sidedownscroll 30s linear infinite;
-  animation: sidedownscroll 30s linear infinite;
-  background-size: auto;
+    background-image: url("../../../assets/img/landing-users.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+    -webkit-animation: sidedownscroll 30s linear infinite;
+    animation: sidedownscroll 30s linear infinite;
+    background-size: auto;
 }
