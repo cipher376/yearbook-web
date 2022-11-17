@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "yearbook-web": {
+    "almamater-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/yearbook-web",
+            "outputPath": "dist/almamater-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "yearbook-web:build"
+            "browserTarget": "almamater-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "yearbook-web:build:production"
+              "browserTarget": "almamater-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "yearbook-web:build"
+            "browserTarget": "almamater-web:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "yearbook-web:serve"
+            "devServerTarget": "almamater-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "yearbook-web:serve:production"
+              "devServerTarget": "almamater-web:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "yearbook-web"
+  "defaultProject": "almamater-web"
 }
